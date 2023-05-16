@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+        }
+        .wrapper {
+            margin: auto;
+            width: 987px
+        }
+        a {
+            width: 250px;
+            height: 50px;
+        }
+        .header-container {
+            margin: 0px ;
+        }
+        .header-line {
+            padding: 50px;
+            display: flex;
+            align-items: center;
+        }
+        .nav-item {
+            text-decoration: none;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28px;
+            color: #000000;
+        }
+        .nav-item1 {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28px;
+            text-decoration: none;
+            color: #000000;
+            text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.5);
+        }
+        .nav-item, .nav-item1 {
+            margin-right: 60px;
+            position: relative;
+            left: 180px;
+        }
+        .header-logo {
+            position: relative;
+            left: -40px;
+        }
+        .cardb {
+            position: relative;
+            top: 30px;
+            width: 994px;
+            height: 500px;
+            background-color: #DFF7FF;
+            border-radius: 50px;
+        }
+        .hh1 {
+            width: 515px;
+            height: 94px;   
+            font-family: 'Roboto', sans-serif;;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 47px;
+            color: #000000;
+            position: relative;
+            top: 96px;
+            left: 60px;
+            z-index: 1;
+        }
+        .hh2 {
+            text-align: left;
+            width: 515px;
+            height: 140px;
+            font-family: 'Roboto',;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 28px;
+            position: relative;
+            top: 10px;
+        }
+        .logo1 {
+            position: relative;
+            left: 499px;
+            background-color: none;
+        }
+        .button {
+            background-color: #3d3bf3;
+            border: 1px;
+            border-radius: 10px;
+            width: 250px;
+            height: 50px;
+            position: relative;
+            left: 130px;
+            top: -61px;
+            box-shadow: 0px 4px 0px rgb(102, 122, 126);
+        }
+        .button-text {
+            color: white;
+            position: relative;
+            text-align: center;
+            top: 15px;
+        }
+        h4 {
+            position: relative;
+            top: 15px;
+            font-family: sans-serif;
+        }
+        .blackimage {
+            width: 1440px;
+            height: 1410px;
+            background-color: #272727;
+            position: relative;
+            left: -220px;
+            top: 100px;
+        }
+        .blackcard1 {
+            position: relative;
+            left: 223px;
+            top: 60px;
+        }
+        .textcard1 {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 26px;
+            text-align: center;
+            width: 270px;
+            height: 100px;
+            position: relative;
+            top: 20px;
+            left: 15px;
+        }
+        .kvadrat1 {
+            width: 300px;
+            height: 253px;
+            background-color: white;
+            border-radius: 0px 0px 12px 12px;
+            position: relative;
+            top: -5px;
+        }
+        .textcard2 {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 23px;
+            text-align: center;
+        }
+        .button1 {
+            background-color: #3d3bf3;
+            border: 1px;
+            border-radius: 10px;
+            width: 250px;
+            height: 50px;
+            position: relative;
+            top: 29px;
+            left: 25px;
+            box-shadow: 0px 4px 0px rgb(102, 122, 126);
+        }
+        .button1-text {
+            position: relative;
+            left: 50px;
+            color: white;
+        }
+        .blackcard2 {
+            position: relative;
+            left: 569px;
+            top: -341px;
+        }
+        .kvadrat2 {
+            width: 300px;
+            height: 253px;
+            background-color: white;
+            border-radius: 0px 0px 12px 12px;
+            position: relative;
+            top: -5px;
+        }
+        .textcard3 {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 26px;
+            text-align: center;
+            position: relative;
+            top: 20px;
+        }
+        .textcard4 {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 23px;
+            text-align: center;
+            position: relative;
+            top: 50px;
+            width: 250px;
+            left: 20px;
+        }
+        .button2 {
+            background-color: #3d3bf3;
+            border: 1px;
+            border-radius: 10px;
+            width: 250px;
+            height: 50px;
+            position: relative;
+            top: 78px;
+            left: 25px;
+            box-shadow: 0px 4px 0px rgb(102, 122, 126);
+        }
+        .button2-text {
+            color: white;
+            text-align: center;
+        }
+        .blackcard3 {
+            position: relative;
+            left: 920px;
+            top: -741px;
+        }
+        .kvadrat3 {
+            width: 300px;
+            height: 253px;
+            background-color: white;
+            position: relative;
+            top: -5px;
+            border-radius: 0px 0px 12px 12px;
+        }
+        .textcard5 {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 26px;
+            text-align: center;
+            width: 270px;
+            height: 100px;
+            position: relative;
+            top: 20px;
+            left: 10px;
+        }
+        .textcard6 {
+            
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+        width: 250px;
+        left: 20px;
+        position: relative;
+        }
+        .button3 {
+            background-color: #3d3bf3;
+            border: 1px;
+            border-radius: 10px;
+            width: 250px;
+            height: 50px;
+            box-shadow: 0px 4px 0px rgb(102, 122, 126);
+            position: relative;
+            left: 25px;
+            top: 29px;
+        }
+        .button3-text {
+            color: white;
+            text-align: center;
+        }
+        .blackcard4 {
+            position: relative;
+            left: -699px;
+            top: 35px;
+        }
+        .kvadrat4 {
+            width: 300px;
+            height: 253px;
+            background-color: white;
+            position: relative;
+            top: -5px;
+            border-radius: 0px 0px 12px 12px;
+        }
+        .textcard7 {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 26px;
+            text-align: center;
+            position: relative;
+            top: 20px;
+        }
+        .textcard8 {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 23px;
+            text-align: center;
+            position: relative;
+            top: 49px;
+            width: 270px;
+            left: 15px;
+        }
+        .button4 {
+            background-color: #3d3bf3;
+            border: 1px;
+            border-radius: 10px;
+            width: 250px;
+            height: 50px;
+            box-shadow: 0px 4px 0px rgb(102, 122, 126);
+            position: relative;
+            left: 25px;
+            top: 79px;
+        }
+        .button4-text {
+            color: white;
+            text-align: center;
+        }
+        .blackcard5 {
+            position: relative;
+            left: 350px;
+            top: -400px;
+        }
+        .kvadrat5 {
+            width: 300px;
+            height: 253px;
+            background-color: white;
+            position: relative;
+            top: -5px;
+            border-radius: 0px 0px 12px 12px;
+        }
+        .textcard9 {
+            position: relative;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 26px;
+            text-align: center;
+            top: 25px;
+        }
+        .textcard10 {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 23px;
+            text-align: center;
+            position: relative;
+            top: 49px;
+        }
+        .button5 {
+            background-color: #3d3bf3;
+            border: 1px;
+            border-radius: 10px;
+            width: 250px;
+            height: 50px;
+            box-shadow: 0px 4px 0px rgb(102, 122, 126);
+            position: relative;
+            left: 25px;
+            top: 79px;
+        }
+        .button5-text {
+            color: white;
+            text-align: center;
+        }
+        .blackcard6 {
+            position: relative;
+            top: -802px;
+            left: 700px;
+        }
+        .kvadrat6 {
+            width: 300px;
+            height: 253px;
+            background-color: white;
+            position: relative;
+            top: -5px;
+            border-radius: 0px 0px 12px 12px;
+        }
+        .textcard11 {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 26px;
+            text-align: center;
+            position: relative;
+            top: 25px;
+        }
+        .textcard12 {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 23px;
+            text-align: center;
+            position: relative;
+            top: 49px;
+            width: 250px;
+            left: 20px  ;
+        }
+        .button6 {
+            background-color: #3d3bf3;
+            border: 1px;
+            border-radius: 10px;
+            width: 250px;
+            height: 50px;
+            box-shadow: 0px 4px 0px rgb(102, 122, 126);
+            position: relative;
+            left: 25px;
+            top: 79px;
+        }
+        .button6-text {
+            color: white;
+            text-align: center;
+        }
+        .blackcard7 {
+            position: relative;
+            top: -765px;
+        }
+        .kvadrat7 {
+            width: 300px;
+            height: 253px;
+            background-color: white;
+            position: relative;
+            top: -5px;
+            border-radius: 0px 0px 12px 12px;
+        }
+        .textcard13 {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 26px;
+            text-align: center;
+            position: relative;
+            top: 25px;
+                        }
+            .textcard14 {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 23px;
+            text-align: center;
+            position: relative;
+            top: 59px;
+            width: 281px;
+            left: 10px;
+            }
+        .button7 {
+            background-color: #3d3bf3;
+            border: 1px;
+            border-radius: 10px;
+            width: 250px;
+            height: 50px;
+            box-shadow: 0px 4px 0px rgb(102, 122, 126);
+            position: relative;
+            left: 25px;
+            top: 100px;
+        }
+        .button7-text {
+            color: white;
+            text-align: center;
+        }
+        .blackcard8 {
+            position: relative;
+            top: -1167px;
+            left: 350px;
+        }
+
+        .kvadrat8 {
+            width: 300px;
+            height: 253px;
+            background-color: white;
+            position: relative;
+            top: -5px;
+            border-radius: 0px 0px 12px 12px;
+        }
+        .textcard15 {
+            font-family: 'Roboto';  
+            font-style: normal;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 26px;
+            text-align: center;
+            position: relative;
+            top: 25px;
+        }
+        .textcard16 {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 23px;
+            text-align: center;
+            position: relative;
+            top: 59px;
+            width: 280px;
+            left: 10px;
+        }
+        .button8 {
+            background-color: #3d3bf3;
+            border: 1px;
+            border-radius: 10px;
+            width: 250px;
+            height: 50px;
+            box-shadow: 0px 4px 0px rgb(102, 122, 126);
+            position: relative;
+            left: 25px;
+            top: 100px;
+        }
+        .button8-text {
+            color: white;
+            text-align: center;
+        }
+        .texto {
+            position: relative;
+            top: 170px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 40px;
+            line-height: 47px;
+        }
+        .kvadrat9 {
+            width: 700px;
+            height: 350px;
+            background-color:   #F7F7F5;
+            position: relative;
+            top: 258px;
+            margin: auto;
+            border-radius: 12px 12px 12px 12px;
+            filter: drop-shadow(10px 10px 6px rgba(0, 0, 0, 0.5));
+        }
+        .krug {
+            background-color: #000000;
+            width: 50px;
+            height: 50px;
+            position: relative;
+            left: 30px;
+            top: 30px;
+            border-radius: 50px;
+        }
+        .name {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 23px;
+            position: relative;
+            left: 100px;
+            top: -5px;
+        }
+        .textkvadrat9 {
+                font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 23px;
+            position: relative;
+            left: 55px;
+            width: 600px;
+            top: 29px;
+            height: 207px;
+        }
+        .krugv1 {
+            border: 1px solid #000000;
+            border-radius: 35px;
+            width: 25px;
+            height: 25px;
+            position: relative;
+            top: 680px;
+            left: -526px;
+        }
+        .vectorv1 {
+            width: 8px;
+            height: 1px;
+            background-color: #000000;
+            position: relative;
+            left: 8px;
+            top: 10px;
+            transform: rotate(150deg);
+        }
+        .vectorv2 {
+            width: 8px;
+            height: 1px;
+            background-color: #000000;
+            position: relative;
+            left: 8px;
+            top: 13px;
+            transform: rotate(30deg);
+        }
+        .vectortext {
+            font-style: normal;
+            font-family: sans-serif;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 16px;
+            position: relative;
+            top: 310px;
+            left: 464px;
+        }
+        .krugv2 {   
+            border: 1px solid #000000;
+            border-radius: 35px;
+            width: 25px;
+            height: 25px;
+            position: relative;
+            top: 819px;
+            left: -448px;
+        }
+        .vectorv3 {
+            width: 8px;
+            height: 1px;
+            background-color: #000000;
+            position: relative;
+            left: 8px;
+            top: 10px;
+            transform: rotate(30deg);
+        }
+        .vectorv4 {
+            width: 8px;
+            height: 1px;
+            background-color: #000000;
+            position: relative;
+            left: 8px;
+            top: 13px;
+            transform: rotate(150deg);
+        }
+        .containersquare {
+            width: 994px;
+            height: 882px;
+            border: 3px solid black;
+            position: relative;
+            top: 360px;
+        }
+        .containersquare {
+            width: 100px; /* Ширина контейнера */
+            height: 100px; /* Высота контейнера */
+            border: 1px solid black; /* Граница контейнера */
+            width: 994px;
+            height: 882px;
+            border: 3px solid #000000;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        .text1s {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 47px;
+            width: 440px;
+            height: 94px;
+            position: relative;
+            top: 54px;
+            left: 70px;
+        }
+        .line1 {
+            border: 0.2px solid #000000;
+            width: 894px;
+            position: relative;
+            left: 50px;
+            top: 100px;
+        }
+        .text2s {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 28px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            top: 135px;
+            left: 51px;
+        }
+        .line2 {
+            border: 0.2px solid #000000;
+            width: 894px;
+            position: relative;
+            left: 50px;
+            top: 165px;
+        }
+        .text3s {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 28px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            top: 195px;
+            left: 51px;
+        }
+        .line3 {
+            border: 0.2px solid #000000;
+            width: 894px;
+            position: relative;
+            left: 50px;
+            top: 225px;
+        }
+        .text4s {  
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        top: 255px;
+        left: 51px;
+        }
+        .line4 {
+            border: 0.2px solid #000000;
+            width: 894px;
+            position: relative;
+            left: 50px;
+            top: 285px;
+        }
+        .text5s {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 28px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            top: 315px;
+            left: 51px;
+        }
+        .line5 {
+            border: 0.2px solid #000000;
+            width: 894px;
+            position: relative;
+            left: 50px;
+            top: 345px;
+        }
+        .text6s {     
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        left: 51px;
+        top: 375px;
+        }
+        .line6 {
+            border: 0.2px solid #000000;
+            width: 894px;
+            position: relative;
+            left: 50px;
+            top: 405px;
+        }
+        .text7s {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 28px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            left: 51px;
+            top: 435px;
+        }
+        .text8s {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 23px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            top: 465px;
+            left: 51px;
+            width: 700px;
+        }
+        .line7 {
+            border: 0.2px solid #000000;
+            width: 894px;
+            position: relative;
+            left: 50px;
+            top: 500px;
+
+        }
+        .vector1 {
+            position: relative;
+            left: 952px;
+            top: -347px;
+        }
+        .vector2 {
+            position: relative;
+            left: 952px;
+            top: -530px;
+        }
+        .plus1 {
+            position: relative;
+            left: 916px;
+            top: -175px;
+        }
+        .plus2 {
+            position: relative;
+            left: 916px;
+            top: -115px;
+        }
+        .plus3 {
+            position: relative;
+            left: 916px;
+            top: -65px;
+        }
+        .plus4 {
+            position: relative;
+            left: 916px;
+            top: -5px;
+        }
+        .plus5 {
+            position: relative;
+            left: 916px;
+            top: 51px;
+        }
+        .plus6 {
+            position: relative;
+            left: 916px;
+            top: 110px;
+        }
+        .buttonfooter {
+            background: #3D3BFF;
+            box-shadow: 0px 10px 6px rgba(61, 59, 255, 0.5);
+            border-radius: 10px;
+            position: relative;
+            top: 350px;
+            width: 360px;
+            height: 50px;   
+            position: relative;
+            left: 329px;
+        }
+        .buttonftext {
+            font-family: 'Roboto';  
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 20px;
+            line-height: 23px;
+            color: #FFFFFF;
+            text-align: center;
+            position: relative;
+            top: 12px;
+        }
+        .footer {
+            width: 1440px;
+            height: 141px;
+            background-color: #272727;
+            position: relative;
+            top: 400px;
+            left: -220px;
+        }
+        .textfooter1 {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 28px;
+            color: #FFFFFF;
+            position: relative;
+            left: 345px;
+            top: 30px;
+        }
+        .textfooter2 {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 28px;
+            color: #FFFFFF;
+            position: relative;
+            left: 550px;
+            top: 5px;
+        }
+        .textfooter3 {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 28px;
+            color: #FFFFFF;
+            position: relative;
+            left: 725px;
+            top: -20px;
+        }
+        .textfooter4 {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 28px;
+            color: #FFFFFF;
+            position: relative;
+            left: 905px;
+            top: -45px;
+        }
+        .textinstagram {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 28px;
+            color: #FFFFFF;
+            position: relative;
+            left: 1030px;
+            top: -72px;
+        }
+        .textfooter {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 28px;
+            color: #FFFFFF;
+            position: relative;
+            top: -55px;
+            left: 250px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="page">
+            <div class="header">
+                <div class="header-container">
+                    <div class="header-line">
+                        <div class="header-logo"><img src="Logo (4).png"></div>
+                    <div class="nav">
+                        <a class="nav-item1" href="#">Наши курсы</a>
+                        <a class="nav-item" href="#">Проекты</a>
+                        <a class="nav-item" href="#">Галерея</a>
+                        <a class="nav-item" href="#">О нас</a>
+                    </div>
+                    </div>
+                </div>
+                <div class="cardb">
+                    <div class="hh1">Курсы программирования и дизайна в Актау
+                        <div class="hh2">Курсы программирования и дизайна в Актау. Для тех, кто хочет стать программистом или дизайнером. Работать в IT и любой креативной индустрии. Достойно зарабатывать делая то, что любишь.</div>
+                    </div>
+                    <div class="logo1"><img src="web 1 (1).png"></div>
+                    <div class="button"><h4 class="button-text">Бесплатный урок</h4></div>
+                    </div>
+            </div>
+            <div class="container">
+                <div class="blackimage">
+                    <div class="blackcard1">
+                        <img src="курс-по-unity-1536x752.png">
+                        <div class="kvadrat1"><div class="textcard1">Курс по созданию видеоигр в Unity</div>
+                        <div class="textcard2">Для тех, кто хочет стать разработчиком видеоигр</div>
+                        <div class="button1"><h4 class="button1-text">Бесплатный урок</h4></div>
+                    </div>
+                    </div>
+                    <div class="blackcard2">
+                        <img src="Курс-по-веб-разработке-с-JavaScript-HTML-CSS-в-Актау-min-1536x752 (1).png" width="300px" height="143px">
+                        <div class="kvadrat2"><div class="textcard3">Курс по веб-разработке 
+                            с JavaScript, HTML, CSS</div>
+                        <div class="textcard4">Для тех, кто хочет стать 
+                            веб-разработчиком</div>
+                        <div class="button2"><h4 class="button2-text">Бесплатный урок</h4></div>
+                        </div>
+                    </div>
+                    <div class="blackcard3">
+                        <img src="курс-по-веб-дизайну-с-figma-актау-min-1536x752.png">
+                        <div class="kvadrat3"><div class="textcard5">Курс по веб-дизайну в Figma</div>
+                        <div class="textcard6">Для тех, кто хочет стать 
+                            веб-дизайнером</div>
+                            <div class="button3"><h4 class="button3-text">Бесплатный урок</h4></div>
+                    </div>
+                    <div class="blackcard4">
+                        <img src="Scratch 1.png">
+                        <div class="kvadrat4">
+                            <div class="textcard7">Курс программирования 
+                                в Scratch</div>
+                                <div class="textcard8">Программирование для 
+                                    детей от 8 лет.</div>
+                                    <div class="button4"><div class="button4-text"><h4>Бесплатный урок</h4></div></div>
+                        </div>
+                    <div class="blackcard5">
+                        <img src="Artboard-min-1536x752.png">
+                        <div class="kvadrat5"><div class="textcard9">Курс по рисованию персонажей в Photoshop</div>
+                        <div class="textcard10">Для тех, кто хочет стать художником</div>
+                        <div class="button5"><div class="button5-text"><h4>Бесплатный урок</h4></div></div>
+                    </div>
+                    </div>
+                    <div class="blackcard6">
+                        <img src="Курс-по-3D-моделированию-Актау-min-1536x752.png">
+                        <div class="kvadrat6"><div class="textcard11">Курс 3D моделирования в Blender, ZBrush</div>
+                        <div class="textcard12">Для тех, кто хочет стать 
+                            веб-дизайнером</div>
+                            <div class="button6"><div class="button6-text"><h4>Бесплатный урок</h4></div></div>
+                    </div>
+                    </div>
+                    <div class="blackcard7">
+                        <img src="Photoshop-с-нуля-актау-1536x752.png">
+                        <div class="kvadrat7">
+                            <div class="textcard13">Курс Photoshop с нуля</div>
+                            <div class="textcard14">Для тех, кто хочет стать 
+                                профи в Photoshop</div>
+                                <div class="button7"><div class="button7-text"><h4>Бесплатный урок</h4></div></div>
+                        </div>
+                    </div>
+                    <div class="blackcard8">
+                        <img src="Аниме-манга-актау-1-1536x752.png">
+                        <div class="kvadrat8">
+                            <div class="textcard15">Курс по аниме и манга</div>
+                            <div class="textcard16">Для тех, кто хочет стать 
+                                профи в аниме и манга</div>
+                                <div class="button8"><div class="button8-text"><h4>Бесплатный урок</h4></div></div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <div class="texto">Отзывы</div>
+                <div class="kvadrat9">
+                    <div class="krug"></div>
+                    <div class="name">Марика Нурмухамбет</div>
+                    <div class="textkvadrat9">Роман, Рафаэль и вся школа программирования qiber school! Спасибо Вам за терпение , порядочность и за перспективы, которые вы даете нашим детям ведете к успешному и обеспеченному будущему. За год обучения мой сын Бакдаулет научился у вас писать собственные программы. 😊 Очень хотелось бы, чтобы это были не просто курсы программирования, а лицей, гимназия. С уклоном программирования 😊 Еще раз Спасибо, за багаж знаний в области IT нашим детям !😊🍓🍓🍓🎉🎉🎉</div>
+                </div>
+                <div class="vector1">
+                    <div class="krugv1">
+                        <div class="vectorv1"></div>
+                        <div class="vectorv2"></div>
+                    </div>
+                </div>
+                <div class="vectortext">4/15</div>
+                <div class="vector2">
+                    <div class="krugv2">
+                        <div class="vectorv3"></div>
+                        <div class="vectorv4"></div>
+                    </div>
+
+                </div>
+                <div class="containersquare">
+                    <div class="text1s">Программируя с нами, 
+                        Ваш ребенок:</div>
+                        <div class="line1"></div>
+                        <div class="text2s">1. Будет готов к будущему</div>
+                        <div class="line2"></div>
+                        <div class="text3s">2. Обретет любимое дело</div>
+                        <div class="line3"></div>
+                        <div class="text4s">3. Станет увереннее в своих силах</div>
+                        <div class="line4"></div>
+                        <div class="text5s">4. Будет побеждать в олимпиадах</div>
+                        <div class="line5"></div>
+                        <div class="text6s">5. Подтянет математику</div>
+                        <div class="line6"></div>
+                        <div class="text7s">6. Улучшит речь и логику</div>
+                        <div class="text8s">Дело в том, что программирование улучшает наше логическое мышление и умение формулировать мысль. Эти навыки, очень важны в повседневном общении.</div>
+                        <div class="line7"></div>
+                        <div class="vector1">
+                            <img src="Vector 2.png">
+                        </div>
+                        <div class="plus1">
+                            <img src="+ (1).png">
+                        </div>
+                        <div class="plus2">
+                            <img src="+.png">
+                        </div>
+                        <div class="plus3">
+                            <img src="+.png">
+                        </div>
+                        <div class="plus4">
+                            <img src="+.png">
+                        </div>
+                        <div class="plus5">
+                            <img src="+.png">
+                        </div>
+                        <div class="plus6">
+                            <img src="+ (3).png">
+                        </div>
+                    </div>
+                    <div class="vector2">
+                        <img src="Vector 3.png">
+                    </div> 
+            </div>
+            <div class="buttonfooter">
+                <div class="buttonftext">Записаться на бесплатный урок</div>
+            </div>
+            <div class="footer">
+                <div class="textfooter1">Наши курсы</div>
+                <div class="textfooter2">Проекты</div>
+                <div class="textfooter3">Галерея</div>
+                <div class="textfooter4">О нас</div>
+                <div class="textinstagram">
+                    Instagram
+                </div>
+                <div class="textfooter">Qiber School. Крупнейшая школа программирования и дизайна в Актау ©️ 2017-2022</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
